@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan Kami</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="hero">
+        <h1>Pernikahan</h1>
+        <h2>[Ary] & [Freya]</h2>
+        <p class="tanggal-utama">Sabtu, 28 Desember 2024</p>
+        <button class="buka-undangan">Buka Undangan</button>
+    </header>
+
+    <main class="konten">
+
+        <section class="salam">
+            <h3>Kepada Yth. Bapak/Ibu/Saudara/i</h3>
+            <p class="nama-tamu">[Nama Tamu/Keluarga]</p>
+            <h3>Untuk mengundang Pernikahan kami</h3>
+            <p class="nama-tamu"> Ary Juanda & Freya JKT-48</p>
+            <p>Dengan memohon kasih dan penyertaan Tuhan Yesus Kristus,
+                kami mengundang Bapak/Ibu/Saudara/i untuk hadir dan memberikan doa restu
+                dalam acara pemberkatan dan resepsi pernikahan kami.
+                .</p>
+        </section>
+
+        <section class="detail-acara">
+            <h3>Pernikahan Suci</h3>
+            <p>Pukul: 09.00 WIB</p>
+            <p>Tempat: GBKP RUNGGUN SIBOLANGIT</p>
+
+            <h3>Mata Kerja</h3>
+            <p>Pukul: 11.00 - 15.00 WIB</p>
+            <p>Tempat: Pajak Sibolangit</p>
+        </section>
+
+        <section class="map">
+            <h3>Lokasi Acara</h3>
+            <div class="placeholder-map"></div>
+            <a href="#" target="_blank" class="tombol-map">Lihat Peta</a>
+        </section>
+
+        <section class="penutup">
+            <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan
+                memberikan doa restu.</p>
+            <p class="terima-kasih">Hormat kami yang mengundang,</p>
+            <p class="mempelai">**[Ary Juanda]** & **[Freya JKT-48]**</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; Developer by SeprySTP</p>
+    </footer>
+
+    <script>
+        document.querySelector('.buka-undangan').addEventListener('click', function () {
+            document.querySelector('.hero').style.display = 'none';
+            document.querySelector('.konten').style.display = 'block';
+            document.body.style.overflow = 'auto';
+        });
+
+        // Menyembunyikan konten utama saat pertama kali dimuat
+        document.querySelector('.konten').style.display = 'none';
+        document.body.style.overflow = 'hidden';
+    </script>
+
+</body>
+
+</html>
